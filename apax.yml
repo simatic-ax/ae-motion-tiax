@@ -1,4 +1,4 @@
-name: "ae-motion-tiax"
+name: "apax-package-name-d7b4b031"
 description: An application example to demonstrate motion control in SIMATIC AX for use in TIA Portal
 version: 0.0.1
 type: lib
@@ -19,7 +19,7 @@ files:
 
 variables:
   PATH_NAME: "./bin/handover-folder"
-  TIA_GLOBAL_LIB_PATH: "./bin/ae-motion-tiax"
+  TIA_GLOBAL_LIB_PATH: "./TIA/apax-package-name-d7b4b031"
   # set the path to your local TIA Portal installation
   TIA_INSTALL_PATH: "C:\\Program Files\\Siemens\\Automation\\Portal V18"
   # remove, if you do not want to allow debugging of your code
