@@ -19,23 +19,48 @@ This wrapper includes one class instance for a positioning axis and one instance
 
 ## How to use the example
 
-1. Convert to a TIA Portal library
-    1. Clone this repository to your local computer
-    2. Install all dependencies using `apax install`
-    3. Run the script `create-tialib` to build the project, export it and generate a TIA Portal global library
-2. Write your application code in TIA Portal
-    1. Open the TIA library with your TIA Portal V18
-    2. Pull the function block `Wrapper` into your plc program
-    3. Create one technology object of the type positioning axis and one of the type speed axis
-    4. Connect the speed axis and the postitioning axis to the wrapper
-    5. Add setpoint values for the motion dynamics
-    6. Add the logic circuit to the boolean inputs for executing commands
-3. Move the Axes
-    1. Load the project into your SIMATIC S7-1500 PLC
-    2. Send commands through your logic to first set the axes into the internal logic with a positive signal edge
-    3. Switch on the axes with a positive signal edge
-    4. Execute various motion commands with a positive edge on the command inputs. Use the input PosVal for all positioning commands
-    5. Optional: Take a look at the active motion by using the TIA Portal trace feature 
+### How to install the application example on your local PC
+
+Run the following commands in a CLI
+
+```sh
+apax create @simatic-ax/ae-motion-tiax --registry https://npm.pkg.github.com ae-motion-tiax
+```
+
+```sh
+axcode ae-motion-tiax
+```
+
+At first time to use ax and install package dependencies
+
+```sh
+apax install -L
+```
+
+AX Code starts with the content of the application example
+
+Generate the TIA Portal global library by executing the creation script
+
+```sh
+apax create-tialib
+```
+
+### How to create your application
+
+1. Open the TIA library with your TIA Portal V18
+2. Pull the function block `Wrapper` into your plc program
+3. Create one technology object of the type positioning axis and one of the type speed axis
+4. Connect the speed axis and the postitioning axis to the wrapper
+5. Add setpoint values for the motion dynamics
+6. Add the logic circuit to the boolean inputs for executing commands
+
+### How to get the technology objects moving
+
+1. Load the project into your SIMATIC S7-1500 PLC using TIA Portal
+2. Send commands through your logic to first set the axes into the internal logic with a positive signal edge
+3. Switch on the axes with a positive signal edge
+4. Execute various motion commands with a positive edge on the command inputs. Use the input PosVal for all positioning commands
+5. Optional: Take a look at the active motion by using the TIA Portal trace feature 
 
 ## Contribution
 
