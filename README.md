@@ -1,4 +1,4 @@
-# Motion Control TIAX 
+# Motion Control TIAX
 
 This repository is a small use case for implementing motion control commands in an object-oriented way.
 
@@ -60,7 +60,7 @@ apax create-tialib
 2. Send commands through your logic to first set the axes into the internal logic with a positive signal edge
 3. Switch on the axes with a positive signal edge
 4. Execute various motion commands with a positive edge on the command inputs. Use the input PosVal for all positioning commands
-5. Optional: Take a look at the active motion by using the TIA Portal trace feature 
+5. Optional: Take a look at the active motion by using the TIA Portal trace feature
 
 ## Contribution
 
