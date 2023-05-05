@@ -1,25 +1,25 @@
-name: "ae-motion-tiax"
-author: MyName
-description: This package is a template for AX2TIA export and import of Json- and Impl-files
+name: "apax-package-name-d7b4b031"
+description: An application example to demonstrate motion control in SIMATIC AX for use in TIA Portal
 version: 0.0.1
 type: lib
 
 targets:
   - "1500"
-  # - plcsim
+  - "axunit-llvm"
 
 devDependencies:
-  "@ax/sdk": ^3.0.0
-  "@ax/ax2tia": ^4.0.0
+  "@ax/sdk": ^3.0.17
+  "@ax/ax2tia": ^4.4.16
+
+dependencies:
+  "@ax/simatic-1500-motioncontrol-native-v7": ^2.1.6
 
 files:
   - bin
 
 variables:
-  # an arbitrary directory that can be chosen freely
   PATH_NAME: "./bin/handover-folder"
-  # you can change the predefined output path where the TIA Portal library will be generated
-  TIA_GLOBAL_LIB_PATH: "./bin/TIAPortalLibrary"
+  TIA_GLOBAL_LIB_PATH: "./TIA/apax-package-name-d7b4b031"
   # set the path to your local TIA Portal installation
   TIA_INSTALL_PATH: "C:\\Program Files\\Siemens\\Automation\\Portal V18"
   # remove, if you do not want to allow debugging of your code
