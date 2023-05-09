@@ -1,4 +1,4 @@
-# Motion Control TIAX 
+# Motion Control TIAX
 
 This repository is a small use case for implementing motion control commands in an object-oriented way.
 
@@ -60,11 +60,20 @@ apax create-tialib
 2. Send commands through your logic to first set the axes into the internal logic with a positive signal edge
 3. Switch on the axes with a positive signal edge
 4. Execute various motion commands with a positive edge on the command inputs. Use the input PosVal for all positioning commands
-5. Optional: Take a look at the active motion by using the TIA Portal trace feature 
+5. Optional: Take a look at the active motion by using the TIA Portal trace feature
 
 ## Contribution
 
 Thanks for your interest in contributing. Anybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section or, even better, is free to propose any changes to this repository using Merge Requests.
+
+## Markdownlint-cli
+
+This workspace will be checked by the [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) (there is also documented ho to install the tool) tool in the CI workflow automatically.  
+To avoid, that the CI workflow fails because of the markdown linter, you can check all markdown files locally by running the markdownlint with:
+
+```sh
+markdownlint **/*.md --fix
+```
 
 ## License and Legal information
 
