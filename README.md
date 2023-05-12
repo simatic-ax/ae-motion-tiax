@@ -44,6 +44,9 @@ Generate the TIA Portal global library by executing the creation script
 ```sh
 apax create-tialib
 ```
+Please notice that in the script, the TIA_INSTALL_PATH needs to be changed to your own installation path of TIA Portal
+
+You can also reference to the [TIAX use case training video](https://console.simatic-ax.siemens.io/trainings) for more details
 
 ### How to create your application
 
