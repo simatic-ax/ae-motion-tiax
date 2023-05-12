@@ -45,6 +45,8 @@ Generate the TIA Portal global library by executing the creation script
 apax create-tialib
 ```
 
+You can also reference to the training videos for [TIAX use case](https://console.simatic-ax.siemens.io/trainings) on AX official website 
+
 ### How to create your application
 
 1. Open the TIA library with your TIA Portal V18
