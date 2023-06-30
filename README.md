@@ -44,7 +44,8 @@ Generate the TIA Portal global library by executing the creation script
 ```sh
 apax create-tialib
 ```
-Please notice that in the script, the TIA_INSTALL_PATH needs to be changed to your own installation path of TIA Portal
+
+Please notice that in the script, the TIA_INSTALL_PATH needs to be changed to your own installation path of TIA Portal.
 
 You can also reference to the [TIAX use case training video](https://console.simatic-ax.siemens.io/trainings) for more details
 
@@ -57,13 +58,18 @@ You can also reference to the [TIAX use case training video](https://console.sim
 5. Add setpoint values for the motion dynamics
 6. Add the logic circuit to the boolean inputs for executing commands
 
+> NOTICE
+>
+> This library makes use of the motion contro native library which controls technology objects in the SIMATIC S7 1500. Depending on the firmware of your SIMATIC controller, you will need a specific version of this library. In the example, the library is used in v7 which is supported by SIMATIC controllers with the firmware version 3.0. If your firmare differs, please change out the library. You can find more information in the [motion control documentation](https://console.simatic-ax.siemens.io/docs/libraries/simatic-1500-motioncontrol-native-docs)
+
 ### How to get the technology objects moving
 
-1. Load the project into your SIMATIC S7-1500 PLC using TIA Portal
-2. Send commands through your logic to first set the axes into the internal logic with a positive signal edge
-3. Switch on the axes with a positive signal edge
-4. Execute various motion commands with a positive edge on the command inputs. Use the input PosVal for all positioning commands
-5. Optional: Take a look at the active motion by using the TIA Portal trace feature
+1. Convert the library to a TIA Portal global library
+2. Load the project into your SIMATIC S7-1500 PLC using TIA Portal
+3. Send commands through your logic to first set the axes into the internal logic with a positive signal edge
+4. Switch on the axes with a positive signal edge
+5. Execute various motion commands with a positive edge on the command inputs. Use the input PosVal for all positioning commands
+6. Optional: Take a look at the active motion by using the TIA Portal trace feature
 
 ## Contribution
 
