@@ -110,7 +110,6 @@ NAMESPACE Motion
                 END_IF;
                 _axisData.homed := _axisAsPos^.StatusWord.%X5;
             END_IF;
-
         END_METHOD
 
         METHOD PUBLIC OVERRIDE RefToAxisIsValid : BOOL

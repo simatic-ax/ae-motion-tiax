@@ -4,16 +4,12 @@ NAMESPACE Motion
     CLASS PUBLIC SpeedAxisCtrl
 
         VAR PROTECTED
-
             _mcPower    : MC_POWER;
             _mcJog      : MC_MOVEJOG;
             _mcHalt     : MC_HALT;
             _mcMoveVel  : MC_MOVEVELOCITY;
-
             _axisData   : AxisData;
-
             _axisDB : DB_ANY;
-
         END_VAR
 
         METHOD PUBLIC SetAxis : BOOL
@@ -69,6 +65,7 @@ NAMESPACE Motion
                 direction : INT;
                 maintainCurrentVel : BOOL;
             END_VAR
+
             _mcMoveVel.velocity := velocity;
             _mcMoveVel.Acceleration := acceleration;
             _mcMoveVel.Deceleration := deceleration;
@@ -85,11 +82,9 @@ NAMESPACE Motion
         METHOD PUBLIC CyclicCall
             THIS.CallMcBlocksSpeedAxis();
             _axisData.enabled := _mcPower.Status;
-
         END_METHOD
 
         METHOD PROTECTED CallMcBlocksSpeedAxis
-
             VAR_TEMP
                 _axisAsSpeed    : REF_TO TO_SpeedAxis;
                 _axisAsAxis     : REF_TO TO_Axis;
@@ -100,7 +95,6 @@ NAMESPACE Motion
             ELSE
                 _axisAsSpeed := AsSpeedAxisRef(_axisDB);
                 _axisAsAxis := AsAxisRef(_axisDB);
-            
                 _mcPower(Axis := _axisAsAxis^);
                 _mcHalt(Axis := _axisAsSpeed^);
                 _mcJog(Axis := _axisAsSpeed^);
@@ -116,7 +110,6 @@ NAMESPACE Motion
                     _mcMoveVel.Execute := FALSE;
                 END_IF;
             END_IF;
-
         END_METHOD
 
         METHOD PUBLIC RefToAxisIsValid : BOOL
