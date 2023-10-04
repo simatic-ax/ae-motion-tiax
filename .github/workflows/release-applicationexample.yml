@@ -13,4 +13,4 @@ jobs:
 
     with:
       VERSION: ${{ github.ref_name }}
-      PROJECT_NAME: ae-trafficlight
+      PROJECT_NAME: ae-motion-tiax
