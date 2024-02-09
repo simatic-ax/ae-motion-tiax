@@ -30,8 +30,11 @@ variables:
 scripts:
   export-tialib: ax2tia -i ./bin/1500/*.lib -o "$PATH_NAME"
   # import-tialib: '"$TIA_INSTALL_PATH\\bin\\Siemens.Simatic.Lang.Library.Importer.exe" -i "$PATH_NAME" -o "$TIA_GLOBAL_LIB_PATH"'
-  import-tialib: '"D:\\DS\copy-roman\\bin\\Siemens.Simatic.Lang.Library.Importer.exe" -i "$PATH_NAME" -o "$TIA_GLOBAL_LIB_PATH"'
+  import-tialib: '"D:\\DS\copy-roman\\bin\\Siemens.Simatic.Lang.Library.Importer.exe"
+    -i "$PATH_NAME" -o "$TIA_GLOBAL_LIB_PATH"'
   create-tialib:
     - apax build
     - apax export-tialib
     - apax import-tialib
+installStrategy: strict
+apaxVersion: 3.1.0
