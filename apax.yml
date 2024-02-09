@@ -9,11 +9,11 @@ targets:
   - "axunit-llvm"
 
 devDependencies:
-  "@ax/sdk": ^4.0.3
-  "@ax/ax2tia": ^5.0.8
+  "@ax/sdk": 4.0.3
+  "@ax/ax2tia": 5.0.8
 
 dependencies:
-  "@ax/simatic-1500-motioncontrol-native-v7": ^3.0.4
+  "@ax/simatic-1500-motioncontrol-native-v7": 3.0.4
 
 files:
   - bin
