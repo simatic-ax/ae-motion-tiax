@@ -6,14 +6,14 @@ type: lib
 
 targets:
   - "1500"
-  - "axunit-llvm"
+  - "llvm"
 
 devDependencies:
-  "@ax/sdk": 4.0.3
-  "@ax/ax2tia": 5.0.8
+  "@ax/sdk": 2311.0.1
+  "@ax/ax2tia": 7.0.16
 
 dependencies:
-  "@ax/simatic-1500-motioncontrol-native-v7": 3.0.4
+  "@ax/simatic-1500-motioncontrol-native-v7": 4.0.49
 
 files:
   - bin
