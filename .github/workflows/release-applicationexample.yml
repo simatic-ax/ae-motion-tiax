@@ -13,4 +13,4 @@ jobs:
 
     with:
       VERSION: ${{ github.ref_name }}
-      PROJECT_NAME: ae-motion-tiax
+      PROJECT_NAME: ae-axftcmlib
