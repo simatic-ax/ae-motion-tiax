@@ -10,7 +10,7 @@ targets:
 
 devDependencies:
   "@ax/sdk": 2311.0.1
-  "@ax/ax2tia": 7.0.16
+  "@ax/ax2tia": 9.0.26
 
 dependencies:
   "@ax/simatic-1500-motioncontrol-native-v7": 4.0.49
