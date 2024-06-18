@@ -1,12 +1,18 @@
-name: "apax-package-name-d7b4b031"
+# General information
+name: "ae-motion-tiax"
+# Description will be displayed in the apax extension
 description: An application example to demonstrate motion control in SIMATIC AX for use in TIA Portal
 version: 0.0.1
 type: lib
-
+# Build targets
 targets:
   - "1500"
   - "llvm"
 
+# Install Setting
+installStrategy: strict
+apaxVersion: 3.2.1
+# Dependencies
 devDependencies:
   "@ax/sdk": 2405.0.0
   "@ax/ax2tia": 9.0.26
@@ -17,6 +23,7 @@ dependencies:
 files:
   - bin
 
+# Project variables
 variables:
   PATH_NAME: "./bin/handover-folder"
   TIA_GLOBAL_LIB_PATH: "./TIA/apax-package-name-d7b4b031"
@@ -26,6 +33,9 @@ variables:
   APAX_BUILD_ARGS:
     - "--debug"
 
+files:
+  - bin
+
 scripts:
   export-tialib: ax2tia -i ./bin/1500/*.lib -o "$PATH_NAME"
   import-tialib: '"$TIA_INSTALL_PATH\\bin\\Siemens.Simatic.Lang.Library.Importer.exe" -i "$PATH_NAME" -o "$TIA_GLOBAL_LIB_PATH"'
@@ -33,5 +43,3 @@ scripts:
     - apax build
     - apax export-tialib
     - apax import-tialib
-installStrategy: strict
-apaxVersion: 3.1.0

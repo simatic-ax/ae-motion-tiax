@@ -1,11 +1,11 @@
 {
-  "name": "apax-package-name-d7b4b031",
-  "version": "0.0.1",
+  "name": "ae-motion-tiax",
+  "version": "0.0.0-placeholder",
   "lockFileVersion": "2",
   "installStrategy": "strict",
   "root": {
-    "name": "apax-package-name-d7b4b031",
-    "version": "0.0.1",
+    "name": "ae-motion-tiax",
+    "version": "0.0.0-placeholder",
     "dependencies": {
       "@ax/simatic-1500-motioncontrol-native-v7": "6.0.11"
     },
