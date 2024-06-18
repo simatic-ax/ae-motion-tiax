@@ -33,6 +33,9 @@ variables:
   APAX_BUILD_ARGS:
     - "--debug"
 
+files:
+  - bin
+
 scripts:
   export-tialib: ax2tia -i ./bin/1500/*.lib -o "$PATH_NAME"
   import-tialib: '"$TIA_INSTALL_PATH\\bin\\Siemens.Simatic.Lang.Library.Importer.exe" -i "$PATH_NAME" -o "$TIA_GLOBAL_LIB_PATH"'
