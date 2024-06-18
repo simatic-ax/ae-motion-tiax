@@ -2,7 +2,7 @@
 name: "ae-motion-tiax"
 # Description will be displayed in the apax extension
 description: An application example to demonstrate motion control in SIMATIC AX for use in TIA Portal
-version: 0.0.0-placeholder
+version: 1.0.0
 type: lib
 # Build targets
 targets:
