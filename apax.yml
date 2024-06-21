@@ -1,5 +1,5 @@
 # General information
-name: "ae-motion-tiax"
+name: '@simatic-ax/ae-motion-tiax'
 # Description will be displayed in the apax extension
 description: An application example to demonstrate motion control in SIMATIC AX for use in TIA Portal
 version: 1.0.0
