@@ -1,6 +1,5 @@
 name: "apax-package-name-d7b4b031"
-description: An application example to demonstrate motion control in SIMATIC AX
-  for use in TIA Portal
+description: An application example to demonstrate motion control in SIMATIC AX for use in TIA Portal
 version: 0.0.1
 type: lib
 
@@ -9,11 +8,11 @@ targets:
   - "llvm"
 
 devDependencies:
-  "@ax/sdk": 2311.0.1
+  "@ax/sdk": 2405.0.0
   "@ax/ax2tia": 9.0.26
 
 dependencies:
-  "@ax/simatic-1500-motioncontrol-native-v7": 4.0.49
+  "@ax/simatic-1500-motioncontrol-native-v7": 6.0.11
 
 files:
   - bin
