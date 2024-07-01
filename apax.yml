@@ -14,11 +14,14 @@ installStrategy: strict
 apaxVersion: 3.2.1
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2311.0.1
+  "@ax/sdk": 2405.0.0
   "@ax/ax2tia": 9.0.26
 
 dependencies:
   "@ax/simatic-1500-motioncontrol-native-v7": 6.0.11
+
+files:
+  - bin
 
 # Project variables
 variables:
