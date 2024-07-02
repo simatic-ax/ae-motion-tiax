@@ -16,8 +16,12 @@ apaxVersion: 3.2.1
 devDependencies:
   "@ax/sdk": 2405.0.0
   "@ax/ax2tia": 9.0.26
+
 dependencies:
   "@ax/simatic-1500-motioncontrol-native-v7": 6.0.11
+
+files:
+  - bin
 
 # Project variables
 variables:
@@ -28,7 +32,6 @@ variables:
   # remove, if you do not want to allow debugging of your code
   APAX_BUILD_ARGS:
     - "--debug"
-
 scripts:
   export-tialib: ax2tia -i ./bin/1500/*.lib -o "$PATH_NAME"
   import-tialib: '"$TIA_INSTALL_PATH\\bin\\Siemens.Simatic.Lang.Library.Importer.exe" -i "$PATH_NAME" -o "$TIA_GLOBAL_LIB_PATH"'
