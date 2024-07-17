@@ -28,16 +28,24 @@ apax create @simatic-ax/ae-motion-tiax --registry https://npm.pkg.github.com ae-
 ```
 
 ```sh
-axcode ae-motion-tiax
+cd ae-motion-tiax
 ```
 
-At first time to use ax and install package dependencies
+```sh
+apax install
+```
 
 ```sh
-apax install -L
+axcode .
 ```
 
 AX Code starts with the content of the application example
+
+Check the TIA Portal installation path in the apax.yml and adapt it when necessary 
+
+```yml
+
+```
 
 Generate the TIA Portal global library by executing the creation script
 

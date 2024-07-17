@@ -1,11 +1,11 @@
 {
-  "name": "ae-motion-tiax",
-  "version": "0.0.0-placeholder",
+  "name": "@simatic-ax/ae-motion-tiax",
+  "version": "1.0.0",
   "lockFileVersion": "2",
   "installStrategy": "strict",
   "root": {
-    "name": "ae-motion-tiax",
-    "version": "0.0.0-placeholder",
+    "name": "@simatic-ax/ae-motion-tiax",
+    "version": "1.0.0",
     "dependencies": {
       "@ax/simatic-1500-motioncontrol-native-v7": "6.0.11"
     },
