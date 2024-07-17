@@ -44,7 +44,18 @@ AX Code starts with the content of the application example
 Check the TIA Portal installation path in the apax.yml and adapt it when necessary
 
 ```yml
+  # set the path to your local TIA Portal installation
+  TIA_INSTALL_PATH: "C:\\Program Files\\Siemens\\Automation\\Portal V19"
+```
 
+Set a new version (e.g. 1.0.1) in the apax.yml
+
+```yml
+# General information
+name: '@simatic-ax/ae-motion-tiax'
+# Description will be displayed in the apax extension
+description: An application example to demonstrate motion control in SIMATIC AX for use in TIA Portal
+version: 1.0.1
 ```
 
 Generate the TIA Portal global library by executing the creation script
