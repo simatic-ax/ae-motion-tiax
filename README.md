@@ -41,7 +41,7 @@ axcode .
 
 AX Code starts with the content of the application example
 
-Check the TIA Portal installation path in the apax.yml and adapt it when necessary 
+Check the TIA Portal installation path in the apax.yml and adapt it when necessary
 
 ```yml
 
