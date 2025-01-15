@@ -15,7 +15,7 @@ apaxVersion: 3.2.1
 # Dependencies
 devDependencies:
   "@ax/sdk": 2405.0.0
-  "@ax/ax2tia": 9.0.26
+  "@ax/ax2tia": 10.0.8
 
 dependencies:
   "@ax/simatic-1500-motioncontrol-native-v7": 6.0.11
