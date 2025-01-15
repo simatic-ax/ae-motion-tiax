@@ -18,7 +18,7 @@ devDependencies:
   "@ax/ax2tia": 9.0.26
 
 dependencies:
-  "@ax/simatic-1500-motioncontrol-native-v7": 6.0.11
+  "@ax/simatic-1500-motioncontrol-native-v7": 6.1.6
 
 files:
   - bin
