@@ -2,27 +2,20 @@
 name: '@simatic-ax/ae-motion-tiax'
 # Description will be displayed in the apax extension
 description: An application example to demonstrate motion control in SIMATIC AX for use in TIA Portal
-version: 1.0.0
+version: 0.0.0-placeholder
 type: lib
 # Build targets
 targets:
   - "1500"
   - "llvm"
-
-# Install Setting
-installStrategy: strict
-apaxVersion: 3.2.1
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2405.0.0
-  "@ax/ax2tia": 9.0.26
-
+  "@ax/sdk": ^2504.0.0
+  "@ax/ax2tia": ^11.0.18
 dependencies:
-  "@ax/simatic-1500-motioncontrol-native-v7": 6.0.11
-
+  "@ax/simatic-1500-motioncontrol-native-v7": ^9.0.1
 files:
   - bin
-
 # Project variables
 variables:
   PATH_NAME: "./bin/handover-folder"
