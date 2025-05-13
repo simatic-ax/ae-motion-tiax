@@ -3,6 +3,8 @@
 # here you can define the content
 
 files:
+  - .gitignore
+  - .gitattributes
   - docs
   - src
   - test
