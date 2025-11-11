@@ -1,7 +1,7 @@
 # General information
 name: '@simatic-ax/ae-motion-tiax'
 # Description will be displayed in the apax extension
-description: An application example to demonstrate motion control in SIMATIC AX for use in TIA Portal
+description: "Application example demonstrating object-oriented motion control implementation for TIAX workflow with TIA Portal integration"
 version: 0.0.0-placeholder
 type: lib
 # Build targets
