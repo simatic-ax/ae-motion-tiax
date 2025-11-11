@@ -10,8 +10,8 @@ targets:
   - "llvm"
 # Dependencies
 devDependencies:
-  "@ax/sdk": ^2504.0.0
-  "@ax/ax2tia": ^11.0.18
+  "@ax/sdk": ^2510.0.0
+  "@ax/ax2tia": ^12.0.0
 dependencies:
   "@ax/simatic-1500-motioncontrol-native-v7": ^9.0.1
 files:
