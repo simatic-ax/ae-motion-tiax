@@ -4,37 +4,31 @@ name: '@simatic-ax/ae-motion-tiax'
 description: "Application example demonstrating object-oriented motion control implementation for TIAX workflow with TIA Portal integration"
 version: 0.0.0-placeholder
 type: lib
-# Build targets
-targets:
-  - "1500"
-  - "llvm"
 # Dependencies
 publicKeys:
   "@simatic-ax":
     "v1": "3792a7e926775425ccdd29ceed8c368c3008b5b33d7d5550b3cb1f58093e1dff"
     "v2": "7af3e394eb2b285a3d99ab8e1f745cc6db75704b30a80393339c721a92ffffd9"
 catalogs:
-  "@ax/simatic-ax": ^2510.0.0
+  "@ax-as/s7-catalog": ^2610.0.0
 devDependencies:
-  "@ax/sdk": ^2510.0.0
-  "@ax/ax2tia": ^12.0.29
+  "@ax-as/s7-sdk": ^2610.0.0
+  "@ax-as/s7-1500-ax2tia": ^13.0.82
 dependencies:
-  "@ax/simatic-1500-motioncontrol-native-v7": ^9.0.1
+  "@ax-mc/s7-motioncontrol-v7-lib": ^11.0.27
 files:
-  - bin
+  - out/Debug/s7
+  - out/Debug/llvm
 # Project variables
 variables:
   PATH_NAME: "./bin/handover-folder"
   TIA_GLOBAL_LIB_PATH: "./TIA/apax-package-name-d7b4b031"
   # set the path to your local TIA Portal installation
   TIA_INSTALL_PATH: "C:\\Program Files\\Siemens\\Automation\\Portal V19"
-  # remove, if you do not want to allow debugging of your code
-  APAX_BUILD_ARGS:
-    - "--debug"
 scripts:
-  export-tialib: ax2tia -i ./bin/1500/*.lib -o "$PATH_NAME"
+  export-tialib: ax2tia -i ./out/Debug/s7/*.lib -o "$PATH_NAME"
   import-tialib: '"$TIA_INSTALL_PATH\\bin\\Siemens.Simatic.Lang.Library.Importer.exe" -i "$PATH_NAME" -o "$TIA_GLOBAL_LIB_PATH"'
   create-tialib:
-    - apax build
+    - apax make
     - apax export-tialib
     - apax import-tialib

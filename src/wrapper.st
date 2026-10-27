@@ -1,4 +1,4 @@
-USING Siemens.Simatic.S71500.MotionControl.Native;
+USING Siemens.S7.MotionControl;
 NAMESPACE Motion
     FUNCTION_BLOCK Wrapper
         VAR_INPUT
