@@ -1,4 +1,4 @@
-USING Siemens.Simatic.S71500.MotionControl.Native;
+USING Siemens.S7.MotionControl;
 NAMESPACE Motion
 
     CLASS PUBLIC PosAxisCtrl EXTENDS SpeedAxisCtrl
